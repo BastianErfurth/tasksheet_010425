@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(10, 56, 12, 0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
                   "Hello App Akademie!",
@@ -29,7 +30,6 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ],
-              mainAxisAlignment: MainAxisAlignment.start,
             ),
           ),
           SizedBox(
@@ -40,31 +40,31 @@ class MainApp extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  child: Center(
-                      child: FilledButton(onPressed: () {}, child: Text("A"))),
                   color: Colors.red,
                   height: 100,
                   width: 100,
+                  child: Center(
+                      child: FilledButton(onPressed: () {}, child: Text("A"))),
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 Container(
-                  child: Center(
-                      child: FilledButton(onPressed: () {}, child: Text("B"))),
                   color: Colors.green,
                   height: 100,
                   width: 100,
+                  child: Center(
+                      child: FilledButton(onPressed: () {}, child: Text("B"))),
                 ),
                 SizedBox(
                   width: 10,
                 ),
                 Container(
-                  child: Center(
-                      child: FilledButton(onPressed: () {}, child: Text("C"))),
                   color: Colors.blue,
                   height: 100,
                   width: 100,
+                  child: Center(
+                      child: FilledButton(onPressed: () {}, child: Text("C"))),
                 ),
               ],
             ),
@@ -73,6 +73,7 @@ class MainApp extends StatelessWidget {
             height: 16,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Icon(
                 Icons.face,
@@ -83,7 +84,6 @@ class MainApp extends StatelessWidget {
                 size: 48,
               ),
             ],
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           )
         ]),
       ),
