@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
             child: HelloAppAk(),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 56, 12, 0),
+            padding: const EdgeInsets.fromLTRB(10, 32, 12, 0),
             child: HelloAppAk(),
           ),
           SizedBox(
@@ -38,7 +38,9 @@ class MainApp extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          IconRow()
+          IconRow(),
+          SizedBox(height: 36),
+          IconRow(),
         ]),
       ),
     );
